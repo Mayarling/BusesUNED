@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1401134F-5294-41C5-A527-6C97AE2C4463}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BusesUNED_Server</RootNamespace>
+    <AssemblyName>BusesUNED-Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPrincipal.Designer.cs">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarRoles.Designer.cs">
+      <DependentUpon>PantallaAgregarRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarAutobuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarAutobuses.Designer.cs">
+      <DependentUpon>PantallaAgregarAutobuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionAutobuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionAutobuses.Designer.cs">
+      <DependentUpon>PantallaGestionAutobuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarConductores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarConductores.Designer.cs">
+      <DependentUpon>PantallaAgregarConductores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionConductores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionConductores.Designer.cs">
+      <DependentUpon>PantallaGestionConductores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarRutas.Designer.cs">
+      <DependentUpon>PantallaAgregarRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionRutas.Designer.cs">
+      <DependentUpon>PantallaGestionRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarTerminales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaAgregarTerminales.Designer.cs">
+      <DependentUpon>PantallaAgregarTerminales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionTerminales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaGestionTerminales.Designer.cs">
+      <DependentUpon>PantallaGestionTerminales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Red\ServidorSocket.cs" />
+    <Compile Include="Utilidades\Bitacora.cs" />
+    <Compile Include="Utilidades\GestorClientes.cs" />
+    <EmbeddedResource Include="PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaAgregarRoles.resx">
+      <DependentUpon>PantallaAgregarRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaAgregarAutobuses.resx">
+      <DependentUpon>PantallaAgregarAutobuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaGestionAutobuses.resx">
+      <DependentUpon>PantallaGestionAutobuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaAgregarConductores.resx">
+      <DependentUpon>PantallaAgregarConductores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaGestionConductores.resx">
+      <DependentUpon>PantallaGestionConductores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaAgregarRutas.resx">
+      <DependentUpon>PantallaAgregarRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaGestionRutas.resx">
+      <DependentUpon>PantallaGestionRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaAgregarTerminales.resx">
+      <DependentUpon>PantallaAgregarTerminales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaGestionTerminales.resx">
+      <DependentUpon>PantallaGestionTerminales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibBusesUNED-comun\LibBusesUNED-comun.csproj">
+      <Project>{05081616-16f9-45bf-bd7d-5ba13254f8be}</Project>
+      <Name>LibBusesUNED-comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibBusesUNED\LibBusesUNED.csproj">
+      <Project>{6e553d27-9515-491c-bca8-a6d0b00fe9c7}</Project>
+      <Name>LibBusesUNED</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
